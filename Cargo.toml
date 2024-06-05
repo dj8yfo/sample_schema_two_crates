@@ -1,0 +1,8 @@
+[package]
+name = "sample_schema_two_crates"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+schema_full_path_crate = { version = "0.1.0", git = "https://github.com/dj8yfo/sample_schema_full_path.git", branch = "master" }
+borsh = { version = "1.5.1", features = ["unstable__schema"], git = "https://github.com/near/borsh-rs.git", branch = "prepend_module"}
